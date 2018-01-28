@@ -33,11 +33,10 @@ class MainController extends Controller
 
   public function login(Request $request)
   {
-      //return $request->all();
 
-      $app_id = "102245973901645";
-      $secret = "a92c08cde87f3ac1092954694a0aaa90";
-      $version = "v1.1";
+      $app_id = "app_id"; /*Update app id*/
+      $secret = "app_secret"; /*Update app secret*/
+      $version = "v1.1"; /*Update version*/
 
 
       $url = 'https://graph.accountkit.com/'.$version.'/access_token?'.
