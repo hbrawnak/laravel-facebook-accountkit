@@ -18,9 +18,9 @@ is available jointly under the MIT License and the Beerware License. See
 To get started with the app, clone the repo:
 
 ```
-$ composer update --no-scripts
+$ composer update
 ```
-Update App ID, secret and version from MainController.php from your facebook accountkit.
+Update App ID, secret and version in MainController.php from your facebook accountkit.
 
 Next, migrate the database:
 
