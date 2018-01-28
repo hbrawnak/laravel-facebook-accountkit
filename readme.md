@@ -10,8 +10,7 @@ by [Habibur Rahman](http://www.facebook.com/follow.hbrawnak).
 ## License
 
 All source code in the [Laravel](https://laravel.com/)
-is available jointly under the MIT License and the Beerware License. See
-[LICENSE.md](LICENSE.md) for details.
+is available jointly under the MIT License.
 
 ## Getting started
 
