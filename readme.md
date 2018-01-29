@@ -4,7 +4,7 @@ Things you may want to cover:
 
 * Laravel version 5.3
 
-This is Tiny Blog
+This is Facebook Accountkit
 by [Habibur Rahman](http://www.facebook.com/follow.hbrawnak).
 
 ## License

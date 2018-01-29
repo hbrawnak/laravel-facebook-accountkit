@@ -48,7 +48,10 @@ class AdminController extends Controller
     {
         $users = User::count();
         $files = File::count();
-        return view('admin.index', compact('users', 'files'));
+        $report = File::where('type', 'Report')->count();
+        $prescription = File::where('type', 'Prescription')->count();
+        $invoice = File::where('type', 'Invoice')->count();
+        return view('admin.index', compact('users', 'files', 'report', 'prescription', 'invoice'));
     }
 
     public function users()

@@ -37,7 +37,7 @@
                     <div class="small-box bg-green">
                         <div class="inner">
                             <h3>{{ $files }}</h3>
-                            <p>Files</p>
+                            <p>Total Files</p>
                         </div>
                         <div class="icon">
                             <i class="fa fa-file-image-o"></i>
@@ -48,6 +48,50 @@
 
             </div>
             <!-- /.row -->
+
+            <div class="row">
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-green">
+                        <div class="inner">
+                            <h3>{{ $report }}</h3>
+                            <p>Reports</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-file-image-o"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-green">
+                        <div class="inner">
+                            <h3>{{ $prescription }}</h3>
+                            <p>Prescriptions</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-file-image-o"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-3 col-xs-6">
+                    <!-- small box -->
+                    <div class="small-box bg-green">
+                        <div class="inner">
+                            <h3>{{ $invoice }}</h3>
+                            <p>Invoices</p>
+                        </div>
+                        <div class="icon">
+                            <i class="fa fa-file-image-o"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
 
         </section>
         <!-- /.content -->
