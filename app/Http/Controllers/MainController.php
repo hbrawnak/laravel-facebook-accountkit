@@ -34,9 +34,9 @@ class MainController extends Controller
   public function login(Request $request)
   {
 
-      $app_id = "app_id"; /*Update app id*/
-      $secret = "app_secret"; /*Update app secret*/
-      $version = "v1.1"; /*Update version*/
+      $app_id = "102245973901645";
+      $secret = "a92c08cde87f3ac1092954694a0aaa90";
+      $version = "v1.1";
 
 
       $url = 'https://graph.accountkit.com/'.$version.'/access_token?'.
@@ -121,7 +121,7 @@ class MainController extends Controller
 
             File::create([
                 'user_id' => $user_id,
-                'file_name' => $filename,
+                'file_name' => $file,
                 'type' => $type
             ]);
 
@@ -131,6 +131,22 @@ class MainController extends Controller
 
         }
 
+    }
+
+    public function fileDelete($id)
+    {
+        $file = File::where('user_id', Auth::id())->where('id', $id)->first();
+
+        if(!$file)
+        {
+            return redirect()->back()->with(['error' => 'Something went wrong']);
+
+        } else {
+
+            $file->delete($id);
+            unlink('images/' . $file->file_name);
+            return redirect()->back()->with(['success' => 'File is deleted']);
+        }
     }
 
 

@@ -31,6 +31,10 @@ Route::post('/files', [
     'uses' => 'MainController@fileUpload',
     'as' => 'fileUpload'
 ]);
+Route::get('/{id}/delete', [
+    'uses' => 'MainController@fileDelete',
+    'as' => 'delete'
+]);
 Route::get('/logout', [
     'uses' => 'MainController@logout',
     'as' => 'logout'

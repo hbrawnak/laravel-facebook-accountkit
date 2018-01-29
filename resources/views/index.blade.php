@@ -79,6 +79,7 @@
             <div class="card-body">
                 <h5 class="card-title">{{ $file->file_name }}</h5>
                 <h5 class="card-title">{{ $file->type }}</h5>
+                <h5 class="card-title"><a href="{{ route('delete', ['id' => $file->id]) }}">Delete</a></h5>
             </div>
         </div>
         @endforeach
